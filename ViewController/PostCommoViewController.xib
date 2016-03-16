@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9060" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PostCommoViewController">
+            <connections>
+                <outlet property="_navigationBar" destination="7Jt-6q-KzI" id="9q4-hH-1TL"/>
+                <outlet property="_tableView" destination="Cv2-ZA-Qox" id="Ubw-eK-y8p"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7Jt-6q-KzI">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="64"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="64" id="gB0-2Z-Kv8"/>
+                    </constraints>
+                    <items>
+                        <navigationItem title="Title" id="Eyt-HD-hJh">
+                            <barButtonItem key="leftBarButtonItem" title="Cancel" id="lke-pv-Yyg">
+                                <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <action selector="cancelBtnAction:" destination="-1" id="BuE-dF-H3O"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem key="rightBarButtonItem" title="Send" id="bkS-4j-pY0">
+                                <color key="tintColor" red="0.16648914279999999" green="1" blue="0.098308009530000004" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="sendBtnAction:" destination="-1" id="AKB-hS-m66"/>
+                                </connections>
+                            </barButtonItem>
+                        </navigationItem>
+                    </items>
+                </navigationBar>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Cv2-ZA-Qox">
+                    <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="Cv2-ZA-Qox" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="5zD-oa-iId"/>
+                <constraint firstItem="7Jt-6q-KzI" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="IZo-Vy-6sF"/>
+                <constraint firstAttribute="trailing" secondItem="Cv2-ZA-Qox" secondAttribute="trailing" id="OF0-bC-iuc"/>
+                <constraint firstItem="7Jt-6q-KzI" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Whp-mW-NFd"/>
+                <constraint firstAttribute="bottom" secondItem="Cv2-ZA-Qox" secondAttribute="bottom" id="d00-5Y-x7Q"/>
+                <constraint firstItem="Cv2-ZA-Qox" firstAttribute="top" secondItem="7Jt-6q-KzI" secondAttribute="bottom" id="oO7-kL-8uT"/>
+                <constraint firstAttribute="trailing" secondItem="7Jt-6q-KzI" secondAttribute="trailing" id="psi-S6-nzv"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+            <point key="canvasLocation" x="355.5" y="166.5"/>
+        </view>
+    </objects>
+</document>

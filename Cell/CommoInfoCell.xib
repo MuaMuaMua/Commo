@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9060" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="40" id="KGk-i7-Jjw" customClass="CommoInfoCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="40"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="39.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GuJ-Iz-YNb">
+                        <rect key="frame" x="0.0" y="39" width="320" height="1"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="BEGIN" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NfH-57-rie">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="39"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits"/>
+                    </textField>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="GuJ-Iz-YNb" secondAttribute="trailing" id="7no-eR-2VZ"/>
+                    <constraint firstItem="NfH-57-rie" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="KSK-zu-kiB"/>
+                    <constraint firstAttribute="trailing" secondItem="NfH-57-rie" secondAttribute="trailing" id="Tpi-FO-ehY"/>
+                    <constraint firstItem="NfH-57-rie" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="Vmn-eS-xlg"/>
+                    <constraint firstItem="GuJ-Iz-YNb" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="eA9-Ox-45I"/>
+                    <constraint firstAttribute="bottom" secondItem="GuJ-Iz-YNb" secondAttribute="bottom" id="sUx-pt-Cgq"/>
+                    <constraint firstItem="GuJ-Iz-YNb" firstAttribute="top" secondItem="NfH-57-rie" secondAttribute="bottom" id="ueS-bt-lLS"/>
+                    <constraint firstItem="GuJ-Iz-YNb" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="39" id="ykd-lO-Spy"/>
+                    <constraint firstItem="GuJ-Iz-YNb" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="zKU-sm-gBc"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="titleField" destination="NfH-57-rie" id="3Ze-gT-mIh"/>
+            </connections>
+            <point key="canvasLocation" x="376" y="328"/>
+        </tableViewCell>
+    </objects>
+</document>
